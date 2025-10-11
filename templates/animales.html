@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+
+{% block contenido %}
+<h2 class="text-center mb-3">Animales Exóticos</h2>
+<p class="text-center mb-4">El reino animal es increíble. Aquí verás algunos animales acuáticos, terrestres y aéreos.</p>
+
+<h3>🐠 Acuáticos</h3>
+<div class="row mb-3">
+    <div class="col-md-4 mb-3">
+        <h5>Nudibranquio</h5>
+        <video class="w-100 fixed-media" controls>
+            <source src="{{ url_for('static', filename='videos/LosNUDIBRANQUIOS.mp4') }}" type="video/mp4">
+        </video>
+    </div>
+    <div class="col-md-4 mb-3">
+        <h5>PezHoja</h5>
+        <video class="w-100 fixed-media" controls>
+            <source src="{{ url_for('static', filename='videos/ElpezHoja.mp4') }}" type="video/mp4">
+        </video>
+    </div>
+</div>
+
+<h3>🐾 Terrestres</h3>
+<div class="row mb-3">
+    <div class="col-md-4 mb-3">
+        <h5>AyeAye</h5>
+        <video class="w-100 fixed-media" controls>
+            <source src="{{ url_for('static', filename='videos/Aye-Aye.MP4') }}" type="video/mp4">
+        </video>
+    </div>
+    <div class="col-md-4 mb-3">
+        <h5>ArmadilloTresBandas</h5>
+        <video class="w-100 fixed-media" controls>
+            <source src="{{ url_for('static', filename='videos/QuéPasaConLosArmadillos.mp4') }}" type="video/mp4">
+        </video>
+    </div>
+</div>
+
+<h3>🦅 Aéreos</h3>
+<div class="row mb-3">
+    <div class="col-md-4 mb-3">
+        <h5>AveDelParaiso</h5>
+        <video class="w-100 fixed-media" controls>
+            <source src="{{ url_for('static', filename='videos/AvesdelParaíso.MP4') }}" type="video/mp4">
+        </video>
+    </div>
+    <div class="col-md-4 mb-3">
+        <h5>Quetzal</h5>
+        <video class="w-100 fixed-media" controls>
+            <source src="{{ url_for('static', filename='videos/ElQuetzal.mp4') }}" type="video/mp4">
+        </video>
+    </div>
+</div>
+{% endblock %}

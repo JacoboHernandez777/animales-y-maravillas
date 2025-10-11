@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+
+{% block contenido %}
+<div class="container my-4">
+    <h2 class="text-center mb-3">Las 7 Maravillas del Mundo</h2>
+    <p class="text-center mb-4"> te quedaras maravillado con esto mi amigo jaja</p>
+
+    <div class="row mb-3">
+        <div class="col-md-4 mb-3">
+            <h5>GranMurallaChina 🇨🇳</h5>
+            <img src="{{ url_for('static', filename='imagenes/murallachina.png') }}" class="w-100 fixed-media mb-2">
+            <video class="w-100 fixed-media" controls>
+                <source src="{{ url_for('static', filename='videos/LaGranMurallaChina.mp4') }}" type="video/mp4">
+            </video>
+            <p>La Gran Muralla China es una antigua estructura de defensa que se extiende a lo largo de miles de kilómetros.</p>
+        </div>
+        <div class="col-md-4 mb-3">
+            <h5>Petra 🏜️</h5>
+            <img src="{{ url_for('static', filename='imagenes/Petra.jpg') }}" class="w-100 fixed-media mb-2">
+            <video class="w-100 fixed-media" controls>
+                <source src="{{ url_for('static', filename='videos/Petra.mp4') }}" type="video/mp4">
+            </video>
+            <p>Petra es famosa por sus edificios tallados en roca y su impresionante arquitectura antigua.</p>
+        </div>
+        <div class="col-md-4 mb-3">
+            <h5>ColiseoRomano 🏟️</h5>
+            <img src="{{ url_for('static', filename='imagenes/Colosseo.jpg') }}" class="w-100 fixed-media mb-2">
+            <video class="w-100 fixed-media" controls>
+                <source src="{{ url_for('static', filename='videos/COLISEOROMANO.mp4') }}" type="video/mp4">
+            </video>
+            <p>El Coliseo Romano es un anfiteatro antiguo, símbolo de la grandeza del Imperio Romano.</p>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-md-4 mb-3">
+            <h5>ChichenItza 🇲🇽</h5>
+            <img src="{{ url_for('static', filename='imagenes/chichen.jpg') }}" class="w-100 fixed-media mb-2">
+            <video class="w-100 fixed-media" controls>
+                <source src="{{ url_for('static', filename='videos/ChichénItzá!.mp4') }}" type="video/mp4">
+            </video>
+            <p>Chichén Itzá fue un importante centro ceremonial de la civilización maya.</p>
+        </div>
+        <div class="col-md-4 mb-3">
+            <h5>MachuPicchu 🏔️</h5>
+            <img src="{{ url_for('static', filename='imagenes/Machu_Picchu.jpg') }}" class="w-100 fixed-media mb-2">
+            <video class="w-100 fixed-media" controls>
+                <source src="{{ url_for('static', filename='videos/MachuPicchu.mp4') }}" type="video/mp4">
+            </video>
+            <p>Machu Picchu es la ciudadela inca más famosa, ubicada en las montañas de Perú.</p>
+        </div>
+        <div class="col-md-4 mb-3">
+            <h5>CristoRedentor ✝️</h5>
+            <img src="{{ url_for('static', filename='imagenes/CristoRedentor.jpg') }}" class="w-100 fixed-media mb-2">
+            <video class="w-100 fixed-media" controls>
+                <source src="{{ url_for('static', filename='videos/CRISTOREDENTOR .mp4') }}" type="video/mp4">
+            </video>
+            <p>El Cristo Redentor es una famosa estatua ubicada en Río de Janeiro, Brasil.</p>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-md-4 mb-3">
+            <h5>TajMahal 🕌</h5>
+            <img src="{{ url_for('static', filename='imagenes/Taj_Mahal.jpg') }}" class="w-100 fixed-media mb-2">
+            <video class="w-100 fixed-media" controls>
+                <source src="{{ url_for('static', filename='videos/ElTajMahal.mp4') }}" type="video/mp4">
+            </video>
+            <p>El Taj Mahal es un mausoleo en India, reconocido como una de las maravillas arquitectónicas del mundo.</p>
+        </div>
+    </div>
+</div>
+
+<style>
+.fixed-media {
+    height: 200px;
+    object-fit: cover;
+}
+</style>
+{% endblock %}

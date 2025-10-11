@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+{% block contenido %}
+<div class="container my-4">
+    <h2 class="text-center mb-3">Vehículos Antiguos</h2>
+    <p class="text-center mb-4">Un poco de historia sobre los primeros automóviles y modelos antiguos:</p>
+
+    <div class="row mb-3">
+        <div class="col-md-4 mb-3">
+            <h5>BenzPatentMotorwagen1886</h5>
+            <p>Primer vehículo de combustión interna patentado. Velocidad máxima ~10-16 km/h.</p>
+            <img src="{{ url_for('static', filename='imagenes/1885Benz.jpg') }}" class="w-100 fixed-media">
+        </div>
+        <div class="col-md-4 mb-3">
+            <h5>FordModelT1908</h5>
+            <p>Popularizó el automóvil a gran escala mediante producción en cadena.</p>
+            <img src="{{ url_for('static', filename='imagenes/el model t.png') }}" class="w-100 fixed-media">
+        </div>
+        <div class="col-md-4 mb-3">
+            <h5>SilverGhostRollsRoyce1906</h5>
+            <p>Automóvil de lujo británico, reputación de fiabilidad y suavidad.</p>
+            <img src="{{ url_for('static', filename='imagenes/Rolls-Royce_Silver_Ghost_at_Centenary.jpg') }}" class="w-100 fixed-media">
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-md-4 mb-3">
+            <h5>VoituretteRenault1898</h5>
+            <p>Uno de los primeros automóviles comerciales de Renault, eficiente y práctico.</p>
+            <img src="{{ url_for('static', filename='imagenes/RVoiturette.jpg') }}" class="w-100 fixed-media">
+        </div>
+        <div class="col-md-4 mb-3">
+            <h5>Fiat500Topolino1936</h5>
+            <p>Pequeño automóvil urbano, icónico antes de los microcoches de posguerra.</p>
+            <img src="{{ url_for('static', filename='imagenes/fiat.jpg') }}" class="w-100 fixed-media">
+        </div>
+        <div class="col-md-4 mb-3">
+            <h5>VolkswagenBeetle</h5>
+            <p>El Beetle se convirtió en uno de los autos más icónicos del siglo XX.</p>
+            <img src="{{ url_for('static', filename='imagenes/Volkswagen.jpg') }}" class="w-100 fixed-media">
+        </div>
+    </div>
+</div>
+
+<style>
+.fixed-media {
+    height: 200px;
+    object-fit: cover;
+}
+</style>
+{% endblock %}

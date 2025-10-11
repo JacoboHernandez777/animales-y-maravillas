@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block contenido %}
+<h2 class="text-center">Bienvenido a la pagina de las maravillas</h2>
+<p class="text-center">te mostrare animales exóticos, maravillas del mundo y vehículos antiguos.</p>
+
+<div class="row justify-content-center mb-3">
+    <div class="col-md-4 text-center">
+        <img src="{{ url_for('static', filename='imagenes/erizo_chistoso.jpg') }}" class="img-fluid mb-2">
+        <p>increible.</p>
+    </div>
+</div>
+
+{% endblock %}
